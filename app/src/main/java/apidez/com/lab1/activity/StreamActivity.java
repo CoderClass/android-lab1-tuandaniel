@@ -6,6 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.ListView;
 
 import apidez.com.lab1.R;
+import apidez.com.lab1.adapter.PostAdapter;
+import apidez.com.lab1.utils.Data;
 
 /**
  * Created by nongdenchet on 10/9/16.
@@ -19,6 +21,6 @@ public class StreamActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_stream);
         lvPost = (ListView) findViewById(R.id.lvPost);
-        // lvPost.setAdapter(new PostAdapter(this, Data.posts()));
+        lvPost.setAdapter(new PostAdapter(this, Data.posts()));
     }
 }

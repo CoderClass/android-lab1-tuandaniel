@@ -6,4 +6,10 @@
     <string name="sign_up">Sign Up for Facebook</string>
     <string name="forgot_password">Forgot password?</string>
     <string name="new_feed">New feed</string>
+    <string name="tvLogo">facebook</string>
+    <string name="etEmail">Email</string>
+    <string name="etPassword">Password</string>
+    <string name="btnLogin">Login</string>
+    <string name="btnForgotPassword">Forgot Password?</string>
+    <string name="btnSignUp">Sign up for Facebook</string>
 </resources>
