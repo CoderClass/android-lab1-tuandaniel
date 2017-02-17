@@ -1,55 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginBottom="@dimen/space_small"
-    android:layout_marginTop="@dimen/space_small"
-    android:padding="@dimen/space_normal">
-
-    <ImageView
-        android:id="@+id/ivAvatar"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        tools:src="@drawable/person" />
-
-    <TextView
-        android:id="@+id/tvUsername"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/space_normal"
-        android:layout_toRightOf="@+id/ivAvatar"
-        android:textSize="@dimen/size_normal"
-        android:textStyle="bold"
-        tools:text="Nongdenchet" />
+        android:layout_marginBottom="@dimen/space_small"
+        android:layout_marginTop="@dimen/space_small"
+        android:padding="@dimen/space_normal">
 
-    <TextView
-        android:id="@+id/tvDate"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/ivAvatar"
-        android:layout_below="@+id/tvUsername"
-        android:layout_marginLeft="@dimen/space_normal"
-        android:layout_toRightOf="@+id/ivAvatar"
-        android:gravity="bottom"
-        android:textSize="@dimen/size_small"
-        tools:text="12/08/2016" />
+        <ImageView
+            android:id="@+id/ivAvatar"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            tools:src="@drawable/person" />
 
-    <TextView
-        android:id="@+id/tvDescription"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/ivAvatar"
-        android:layout_marginTop="@dimen/space_normal"
-        android:textSize="@dimen/size_small"
-        tools:text="A drawable resource is a general concept for a graphic that can be drawn to the screen. Drawables are used to define shapes, colors, borders, gradients, etc. which can then be applied to views within an Activity." />
+        <TextView
+            android:id="@+id/tvUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_normal"
+            android:layout_toRightOf="@+id/ivAvatar"
+            android:textSize="@dimen/size_normal"
+            android:textStyle="bold"
+            tools:text="Nongdenchet" />
 
-    <ImageView
-        android:id="@+id/ivImage"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/tvDescription"
-        android:layout_marginTop="@dimen/space_normal"
-        android:adjustViewBounds="true"
-        tools:src="@drawable/sample" />
-</RelativeLayout>
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ivAvatar"
+            android:layout_below="@+id/tvUsername"
+            android:layout_marginLeft="@dimen/space_normal"
+            android:layout_toRightOf="@+id/ivAvatar"
+            android:gravity="bottom"
+            android:textSize="@dimen/size_small"
+            tools:text="12/08/2016" />
+
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivAvatar"
+            android:layout_marginTop="@dimen/space_normal"
+            android:textSize="@dimen/size_small"
+            tools:text="A drawable resource is a general concept for a graphic that can be drawn to the screen. Drawables are used to define shapes, colors, borders, gradients, etc. which can then be applied to views within an Activity." />
+
+        <ImageView
+            android:id="@+id/ivImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvDescription"
+            android:layout_marginTop="@dimen/space_normal"
+            android:adjustViewBounds="true"
+            tools:src="@drawable/sample" />
+    </RelativeLayout>
+</layout>
